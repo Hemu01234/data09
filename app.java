@@ -1,10 +1,13 @@
-public class EvenOdd {
+public class Fibonacci {
     public static void main(String[] args) {
-        int num = 7;
-        if (num % 2 == 0) {
-            System.out.println(num + " is an even number.");
-        } else {
-            System.out.println(num + " is an odd number.");
+        int n = 10;
+        int a = 0, b = 1;
+        System.out.print("Fibonacci Series up to " + n + " terms: ");
+        for (int i = 1; i <= n; ++i) {
+            System.out.print(a + " ");
+            int nextTerm = a + b;
+            a = b;
+            b = nextTerm;
         }
     }
 }
